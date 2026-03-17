@@ -2,25 +2,211 @@
 <html lang="tr">
 <head>
   <meta charset="UTF-8">
-  <title>Dizi Fragmanları İzle</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dizi Fragmanları İzle | Güncel Diziler</title>
+  <meta name="description" content="En güncel dizi fragmanları, analizler ve yeni bölüm detaylarını takip edin.">
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      min-height: 100vh;
+      background: linear-gradient(135deg, #0f172a, #1e293b, #334155);
+      color: #fff;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 30px 16px;
+    }
+
+    .card {
+      width: 100%;
+      max-width: 820px;
+      background: rgba(255, 255, 255, 0.08);
+      border: 1px solid rgba(255, 255, 255, 0.15);
+      border-radius: 24px;
+      padding: 48px 32px;
+      text-align: center;
+      backdrop-filter: blur(12px);
+      -webkit-backdrop-filter: blur(12px);
+      box-shadow: 0 20px 60px rgba(0, 0, 0, 0.35);
+    }
+
+    .badge {
+      display: inline-block;
+      background: rgba(255, 255, 255, 0.12);
+      color: #cbd5e1;
+      padding: 8px 16px;
+      border-radius: 999px;
+      font-size: 14px;
+      margin-bottom: 18px;
+      letter-spacing: 0.5px;
+    }
+
+    h1 {
+      font-size: 42px;
+      line-height: 1.2;
+      margin-bottom: 18px;
+    }
+
+    .desc {
+      max-width: 680px;
+      margin: 0 auto 28px;
+      font-size: 18px;
+      line-height: 1.7;
+      color: #e2e8f0;
+    }
+
+    .buttons {
+      display: flex;
+      justify-content: center;
+      gap: 14px;
+      flex-wrap: wrap;
+      margin-bottom: 36px;
+    }
+
+    .btn {
+      display: inline-block;
+      text-decoration: none;
+      padding: 14px 24px;
+      border-radius: 14px;
+      font-weight: bold;
+      transition: 0.25s ease;
+    }
+
+    .btn-primary {
+      background: #f97316;
+      color: #fff;
+      box-shadow: 0 10px 25px rgba(249, 115, 22, 0.35);
+    }
+
+    .btn-primary:hover {
+      background: #ea580c;
+      transform: translateY(-2px);
+    }
+
+    .btn-secondary {
+      background: rgba(255, 255, 255, 0.12);
+      color: #fff;
+      border: 1px solid rgba(255, 255, 255, 0.15);
+    }
+
+    .btn-secondary:hover {
+      background: rgba(255, 255, 255, 0.18);
+      transform: translateY(-2px);
+    }
+
+    .features {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 16px;
+      margin-top: 10px;
+    }
+
+    .feature-box {
+      background: rgba(255, 255, 255, 0.07);
+      border: 1px solid rgba(255, 255, 255, 0.12);
+      border-radius: 18px;
+      padding: 20px;
+      text-align: left;
+    }
+
+    .feature-box h3 {
+      font-size: 18px;
+      margin-bottom: 8px;
+      color: #fff;
+    }
+
+    .feature-box p {
+      font-size: 15px;
+      line-height: 1.6;
+      color: #cbd5e1;
+    }
+
+    .footer-link {
+      margin-top: 30px;
+      font-size: 15px;
+      color: #cbd5e1;
+    }
+
+    .footer-link a {
+      color: #fbbf24;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .footer-link a:hover {
+      text-decoration: underline;
+    }
+
+    @media (max-width: 700px) {
+      .card {
+        padding: 34px 20px;
+      }
+
+      h1 {
+        font-size: 30px;
+      }
+
+      .desc {
+        font-size: 16px;
+      }
+
+      .features {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
 </head>
 <body>
 
-<h1>Dizi Fragmanları ve Analizler</h1>
+  <div class="card">
+    <div class="badge">🎬 Güncel Dizi Dünyası</div>
 
-<p>
-En güncel dizi fragmanlarını izlemek için:
-<a href="https://dizifragman.tr">dizi fragmanları izle</a>
-</p>
+    <h1>Dizi Fragmanları ve Analizler</h1>
 
-<p>
-👉 <a href="https://dizifragman.tr">https://dizifragman.tr</a>
-</p>
+    <p class="desc">
+      En güncel dizi fragmanlarını, karakter analizlerini ve yeni bölüm gelişmelerini
+      tek yerde takip etmek isteyenler için öne çıkan adres:
+      <strong>dizifragman.tr</strong>
+    </p>
 
-<p>
-Yeni diziler ve analizler için:
-<a href="https://dizifragman.tr">en güncel dizileri takip et</a>
-</p>
+    <div class="buttons">
+      <a class="btn btn-primary" href="https://dizifragman.tr" target="_blank">Dizi Fragmanları İzle</a>
+      <a class="btn btn-secondary" href="https://dizifragman.tr" target="_blank">Siteyi Ziyaret Et</a>
+    </div>
+
+    <div class="features">
+      <div class="feature-box">
+        <h3>📺 Güncel Fragmanlar</h3>
+        <p>Yeni bölüm fragmanlarını hızlı şekilde takip edebilir, öne çıkan yapımları tek sayfada görebilirsiniz.</p>
+      </div>
+
+      <div class="feature-box">
+        <h3>📝 Dizi Analizleri</h3>
+        <p>Bölüm detayları, karakter gelişimleri ve dikkat çeken sahneler hakkında içeriklere ulaşabilirsiniz.</p>
+      </div>
+
+      <div class="feature-box">
+        <h3>⭐ Popüler Yapımlar</h3>
+        <p>Gündemde olan dizileri, izleyici ilgisini çeken içerikleri ve sıcak gelişmeleri inceleyebilirsiniz.</p>
+      </div>
+
+      <div class="feature-box">
+        <h3>🚀 Hızlı Erişim</h3>
+        <p>Sade yapı ve hızlı sayfa deneyimi sayesinde aradığınız içeriklere zaman kaybetmeden ulaşabilirsiniz.</p>
+      </div>
+    </div>
+
+    <p class="footer-link">
+      Daha fazlası için:
+      <a href="https://dizifragman.tr" target="_blank">https://dizifragman.tr</a>
+    </p>
+  </div>
 
 </body>
 </html>
