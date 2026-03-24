@@ -10,7 +10,6 @@
   <meta name="author" content="Gencer">
   <link rel="canonical" href="https://gencergonultas.github.io/gencer-site/">
 
-  <!-- Open Graph -->
   <meta property="og:type" content="website">
   <meta property="og:locale" content="tr_TR">
   <meta property="og:title" content="Dizi Fragmanları İzle | Güncel Yeni Bölüm Fragmanları ve Dizi Analizleri">
@@ -190,6 +189,27 @@
       color: #cbd5e1;
     }
 
+    .page-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 16px;
+      margin-top: 10px;
+    }
+
+    .page-box {
+      background: rgba(255, 255, 255, 0.07);
+      border: 1px solid rgba(255, 255, 255, 0.12);
+      border-radius: 18px;
+      padding: 22px;
+    }
+
+    .page-box a {
+      display: inline-block;
+      margin-top: 8px;
+      font-weight: bold;
+      text-decoration: none;
+    }
+
     @media (max-width: 700px) {
       .hero-card,
       .content-card {
@@ -209,7 +229,8 @@
         font-size: 16px;
       }
 
-      .features {
+      .features,
+      .page-grid {
         grid-template-columns: 1fr;
       }
     }
@@ -331,6 +352,29 @@
         Özellikle sezon boyunca gündemde kalan yapımlarda, kısa ama güçlü analiz metinleri kullanıcıların sayfada
         daha fazla zaman geçirmesini sağlar. Bu da hem SEO açısından olumlu sinyal üretir hem de kullanıcı sadakatini artırır.
       </p>
+    </section>
+
+    <section class="content-card">
+      <h2>Diğer Sayfalar</h2>
+      <div class="page-grid">
+        <div class="page-box">
+          <h3>Yeni Bölüm Fragmanları</h3>
+          <p>
+            Güncel dizi tanıtımları, son fragmanlar ve yeni bölüm öncesi en çok merak edilen gelişmelere
+            odaklanan özel sayfaya göz at.
+          </p>
+          <a href="yeni-bolum-fragmanlari.html">Sayfayı Aç</a>
+        </div>
+
+        <div class="page-box">
+          <h3>Dizi Analizleri</h3>
+          <p>
+            Karakter yorumları, bölüm detayları ve hikâyedeki kırılma anlarını daha yakından inceleyen
+            analiz sayfasına geç.
+          </p>
+          <a href="dizi-analizleri.html">Sayfayı Aç</a>
+        </div>
+      </div>
     </section>
 
     <section class="content-card">
