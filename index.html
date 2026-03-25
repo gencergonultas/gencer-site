@@ -22,217 +22,41 @@
   <meta name="twitter:description" content="En güncel dizi fragmanlarını, yeni bölüm gelişmelerini ve dizi analizlerini keşfet.">
 
   <style>
-    * {
-      box-sizing: border-box;
-      margin: 0;
-      padding: 0;
-    }
-
-    body {
-      font-family: Arial, Helvetica, sans-serif;
-      background: linear-gradient(135deg, #0f172a, #1e293b, #334155);
-      color: #fff;
-      line-height: 1.7;
-    }
-
-    .wrapper {
-      width: 100%;
-      max-width: 1100px;
-      margin: 0 auto;
-      padding: 30px 16px 60px;
-    }
-
-    .hero-card,
-    .content-card {
-      background: rgba(255, 255, 255, 0.08);
-      border: 1px solid rgba(255, 255, 255, 0.15);
-      border-radius: 24px;
-      backdrop-filter: blur(12px);
-      -webkit-backdrop-filter: blur(12px);
-      box-shadow: 0 20px 60px rgba(0, 0, 0, 0.35);
-    }
-
-    .hero-card {
-      padding: 48px 32px;
-      text-align: center;
-      margin-bottom: 28px;
-    }
-
-    .content-card {
-      padding: 36px 28px;
-      margin-bottom: 24px;
-    }
-
-    .badge {
-      display: inline-block;
-      background: rgba(255, 255, 255, 0.12);
-      color: #cbd5e1;
-      padding: 8px 16px;
-      border-radius: 999px;
-      font-size: 14px;
-      margin-bottom: 18px;
-      letter-spacing: 0.5px;
-    }
-
-    h1 {
-      font-size: 42px;
-      line-height: 1.2;
-      margin-bottom: 18px;
-    }
-
-    h2 {
-      font-size: 28px;
-      margin-bottom: 14px;
-      color: #fff;
-    }
-
-    h3 {
-      font-size: 20px;
-      margin-bottom: 10px;
-      color: #fff;
-    }
-
-    p {
-      font-size: 17px;
-      color: #e2e8f0;
-      margin-bottom: 16px;
-    }
-
-    .desc {
-      max-width: 760px;
-      margin: 0 auto 28px;
-      font-size: 18px;
-      color: #e2e8f0;
-    }
-
-    .buttons {
-      display: flex;
-      justify-content: center;
-      gap: 14px;
-      flex-wrap: wrap;
-      margin-bottom: 36px;
-    }
-
-    .btn {
-      display: inline-block;
-      text-decoration: none;
-      padding: 14px 24px;
-      border-radius: 14px;
-      font-weight: bold;
-      transition: 0.25s ease;
-    }
-
-    .btn-primary {
-      background: #f97316;
-      color: #fff;
-      box-shadow: 0 10px 25px rgba(249, 115, 22, 0.35);
-    }
-
-    .btn-primary:hover {
-      background: #ea580c;
-      transform: translateY(-2px);
-    }
-
-    .btn-secondary {
-      background: rgba(255, 255, 255, 0.12);
-      color: #fff;
-      border: 1px solid rgba(255, 255, 255, 0.15);
-    }
-
-    .btn-secondary:hover {
-      background: rgba(255, 255, 255, 0.18);
-      transform: translateY(-2px);
-    }
-
-    .features {
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-      gap: 16px;
-      margin-top: 10px;
-    }
-
-    .feature-box {
-      background: rgba(255, 255, 255, 0.07);
-      border: 1px solid rgba(255, 255, 255, 0.12);
-      border-radius: 18px;
-      padding: 20px;
-      text-align: left;
-    }
-
-    .feature-box p {
-      font-size: 15px;
-      color: #cbd5e1;
-      margin-bottom: 0;
-    }
-
-    .content-card ul {
-      padding-left: 20px;
-      margin-bottom: 18px;
-    }
-
-    .content-card li {
-      color: #e2e8f0;
-      margin-bottom: 8px;
-    }
-
-    a {
-      color: #fbbf24;
-    }
-
-    a:hover {
-      text-decoration: underline;
-    }
-
-    .footer-link {
-      margin-top: 24px;
-      font-size: 15px;
-      color: #cbd5e1;
-    }
-
-    .page-grid {
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-      gap: 16px;
-      margin-top: 10px;
-    }
-
-    .page-box {
-      background: rgba(255, 255, 255, 0.07);
-      border: 1px solid rgba(255, 255, 255, 0.12);
-      border-radius: 18px;
-      padding: 22px;
-    }
-
-    .page-box a {
-      display: inline-block;
-      margin-top: 8px;
-      font-weight: bold;
-      text-decoration: none;
-    }
-
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body { font-family: Arial, Helvetica, sans-serif; background: linear-gradient(135deg, #0f172a, #1e293b, #334155); color: #fff; line-height: 1.7; }
+    .wrapper { width: 100%; max-width: 1100px; margin: 0 auto; padding: 30px 16px 60px; }
+    .hero-card, .content-card { background: rgba(255,255,255,0.08); border: 1px solid rgba(255,255,255,0.15); border-radius: 24px; backdrop-filter: blur(12px); -webkit-backdrop-filter: blur(12px); box-shadow: 0 20px 60px rgba(0,0,0,0.35); }
+    .hero-card { padding: 48px 32px; text-align: center; margin-bottom: 28px; }
+    .content-card { padding: 36px 28px; margin-bottom: 24px; }
+    .badge { display: inline-block; background: rgba(255,255,255,0.12); color: #cbd5e1; padding: 8px 16px; border-radius: 999px; font-size: 14px; margin-bottom: 18px; letter-spacing: 0.5px; }
+    h1 { font-size: 42px; line-height: 1.2; margin-bottom: 18px; }
+    h2 { font-size: 28px; margin-bottom: 14px; color: #fff; }
+    h3 { font-size: 20px; margin-bottom: 10px; color: #fff; }
+    p { font-size: 17px; color: #e2e8f0; margin-bottom: 16px; }
+    .desc { max-width: 760px; margin: 0 auto 28px; font-size: 18px; color: #e2e8f0; }
+    .buttons { display: flex; justify-content: center; gap: 14px; flex-wrap: wrap; margin-bottom: 36px; }
+    .btn { display: inline-block; text-decoration: none; padding: 14px 24px; border-radius: 14px; font-weight: bold; transition: 0.25s ease; }
+    .btn-primary { background: #f97316; color: #fff; box-shadow: 0 10px 25px rgba(249,115,22,0.35); }
+    .btn-primary:hover { background: #ea580c; transform: translateY(-2px); }
+    .btn-secondary { background: rgba(255,255,255,0.12); color: #fff; border: 1px solid rgba(255,255,255,0.15); }
+    .btn-secondary:hover { background: rgba(255,255,255,0.18); transform: translateY(-2px); }
+    .features { display: grid; grid-template-columns: repeat(2,1fr); gap: 16px; margin-top: 10px; }
+    .feature-box { background: rgba(255,255,255,0.07); border: 1px solid rgba(255,255,255,0.12); border-radius: 18px; padding: 20px; text-align: left; }
+    .feature-box p { font-size: 15px; color: #cbd5e1; margin-bottom: 0; }
+    .content-card ul { padding-left: 20px; margin-bottom: 18px; }
+    .content-card li { color: #e2e8f0; margin-bottom: 8px; }
+    a { color: #fbbf24; }
+    a:hover { text-decoration: underline; }
+    .footer-link { margin-top: 24px; font-size: 15px; color: #cbd5e1; }
+    .page-grid { display: grid; grid-template-columns: repeat(2,1fr); gap: 16px; margin-top: 10px; }
+    .page-box { background: rgba(255,255,255,0.07); border: 1px solid rgba(255,255,255,0.12); border-radius: 18px; padding: 22px; }
+    .page-box a { display: inline-block; margin-top: 8px; font-weight: bold; text-decoration: none; }
     @media (max-width: 700px) {
-      .hero-card,
-      .content-card {
-        padding: 28px 18px;
-      }
-
-      h1 {
-        font-size: 30px;
-      }
-
-      h2 {
-        font-size: 24px;
-      }
-
-      .desc,
-      p {
-        font-size: 16px;
-      }
-
-      .features,
-      .page-grid {
-        grid-template-columns: 1fr;
-      }
+      .hero-card, .content-card { padding: 28px 18px; }
+      h1 { font-size: 30px; }
+      h2 { font-size: 24px; }
+      .desc, p { font-size: 16px; }
+      .features, .page-grid { grid-template-columns: 1fr; }
     }
   </style>
 
@@ -256,36 +80,29 @@
 
     <section class="hero-card">
       <div class="badge">🎬 Güncel Dizi Dünyası</div>
-
       <h1>Dizi Fragmanları İzle ve Yeni Bölüm Gelişmelerini Takip Et</h1>
-
       <p class="desc">
         En güncel <strong>dizi fragmanları</strong>, yeni bölüm tanıtımları, karakter analizleri ve
         popüler yapımlara dair dikkat çeken gelişmeleri tek yerde görmek isteyenler için öne çıkan adres:
         <strong>dizifragman.tr</strong>
       </p>
-
       <div class="buttons">
-        <a class="btn btn-primary" href="https://dizifragman.tr" target="_blank" rel="noopener noreferrer">Dizi Fragmanları İzle</a>
-        <a class="btn btn-secondary" href="https://dizifragman.tr" target="_blank" rel="noopener noreferrer">Yeni Bölüm Fragmanları</a>
+        <a class="btn btn-primary" href="https://dizifragman.tr" target="_blank" rel="noopener">Dizi Fragmanları İzle</a>
+        <a class="btn btn-secondary" href="https://dizifragman.tr" target="_blank" rel="noopener">Yeni Bölüm Fragmanları</a>
       </div>
-
       <div class="features">
         <div class="feature-box">
           <h3>📺 Güncel Fragmanlar</h3>
           <p>Yeni bölüm fragmanlarını hızlı şekilde takip edebilir, öne çıkan yapımları tek sayfada görebilirsiniz.</p>
         </div>
-
         <div class="feature-box">
           <h3>📝 Dizi Analizleri</h3>
           <p>Bölüm detayları, karakter gelişimleri ve dikkat çeken sahneler hakkında içeriklere ulaşabilirsiniz.</p>
         </div>
-
         <div class="feature-box">
           <h3>⭐ Popüler Yapımlar</h3>
           <p>Gündemde olan dizileri, izleyici ilgisini çeken içerikleri ve sıcak gelişmeleri inceleyebilirsiniz.</p>
         </div>
-
         <div class="feature-box">
           <h3>🚀 Hızlı Erişim</h3>
           <p>Sade yapı ve hızlı sayfa deneyimi sayesinde aradığınız içeriklere zaman kaybetmeden ulaşabilirsiniz.</p>
@@ -316,8 +133,8 @@
         popüler yapımların tek çatı altında toplanması kullanıcı deneyimini güçlendirir.
       </p>
       <p>
-        Bu yüzden <a href="https://dizifragman.tr" target="_blank" rel="noopener noreferrer">yeni bölüm fragmanları</a>
-        ve <a href="https://dizifragman.tr" target="_blank" rel="noopener noreferrer">dizi fragmanları izle</a>
+        Bu yüzden <a href="https://dizifragman.tr" target="_blank" rel="noopener">yeni bölüm fragmanları</a>
+        ve <a href="https://dizifragman.tr" target="_blank" rel="noopener">dizi fragmanları izle</a>
         odaklı içerik sunan sayfalar, sadece backlink amacıyla değil kullanıcıya değer sunduğu için de öne çıkar.
       </p>
     </section>
@@ -359,19 +176,12 @@
       <div class="page-grid">
         <div class="page-box">
           <h3>Yeni Bölüm Fragmanları</h3>
-          <p>
-            Güncel dizi tanıtımları, son fragmanlar ve yeni bölüm öncesi en çok merak edilen gelişmelere
-            odaklanan özel sayfaya göz at.
-          </p>
+          <p>Güncel dizi tanıtımları, son fragmanlar ve yeni bölüm öncesi en çok merak edilen gelişmelere odaklanan özel sayfaya göz at.</p>
           <a href="yeni-bolum-fragmanlari.html">Sayfayı Aç</a>
         </div>
-
         <div class="page-box">
           <h3>Dizi Analizleri</h3>
-          <p>
-            Karakter yorumları, bölüm detayları ve hikâyedeki kırılma anlarını daha yakından inceleyen
-            analiz sayfasına geç.
-          </p>
+          <p>Karakter yorumları, bölüm detayları ve hikâyedeki kırılma anlarını daha yakından inceleyen analiz sayfasına geç.</p>
           <a href="dizi-analizleri.html">Sayfayı Aç</a>
         </div>
       </div>
@@ -380,7 +190,7 @@
     <section class="content-card">
       <h2>Dizifragman.tr Ne Sunuyor?</h2>
       <p>
-        <a href="https://dizifragman.tr" target="_blank" rel="noopener noreferrer">dizifragman.tr</a>,
+        <a href="https://dizifragman.tr" target="_blank" rel="noopener">dizifragman.tr</a>,
         güncel dizi fragmanları, yeni bölüm gelişmeleri ve dikkat çeken dizi analizlerini tek çatı altında sunmayı hedefleyen bir içerik kaynağıdır.
         Kullanıcılar burada hem popüler yapımları takip edebilir hem de yeni yayınlanan tanıtımlara hızlı şekilde ulaşabilir.
       </p>
@@ -388,10 +198,8 @@
         Eğer amacın güncel <strong>dizi fragmanları izlemek</strong>, yeni bölümlere dair ipuçlarını görmek ve
         popüler diziler hakkında öne çıkan gelişmeleri tek yerde bulmaksa, bu yapı tam olarak buna hizmet eder.
       </p>
-
       <p class="footer-link">
-        Daha fazlası için:
-        <a href="https://dizifragman.tr" target="_blank" rel="noopener noreferrer">https://dizifragman.tr</a>
+        Daha fazlası için: <a href="https://dizifragman.tr" target="_blank" rel="noopener">https://dizifragman.tr</a>
       </p>
     </section>
 
